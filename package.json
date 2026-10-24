@@ -1,0 +1,23 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix Backend\" \"npm run dev --prefix Frontend\"",
+     "build": "npm install --prefix Backend && npm install --prefix Frontend && npm run build --prefix Frontend",
+  "start": "npm start --prefix Backend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^10.0.6"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.3.0",
+    "mongoose": "^9.11.4",
+    "nodemon": "^3.1.14"
+  }
+}
